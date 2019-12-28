@@ -1,0 +1,132 @@
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+/* ------------------------------------------- */
+
+.wrap{
+    max-width: 1049px;
+    margin: 0 auto;
+}
+
+.banner{
+    background-image: url(../img/header_desktop.png);
+    max-width: 1049px;
+    height: 420px;
+    color: white;
+}
+
+.header{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1.5% 3%;
+}
+
+.header h1{
+    display: block;
+    float: left;
+}
+
+.header h1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 200%;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.header h1 a:hover{
+    color: #f84242;
+}
+
+.nav{
+    float: right;
+}
+
+.nav li{
+    float: left;
+    display: block;
+    padding-top: 10px;
+}
+
+
+.nav li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    border-bottom: 3px solid transparent;
+}
+
+.nav li a:hover{
+    color: #f84242;
+    border-bottom: 3px solid #f84242;
+}
+
+.tagline{
+    background: rgba(0, 0, 0, 0.3);
+    width: 50%;
+    margin: 8% auto;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.tagline h2{
+    font-size: 250%;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.tagline p{
+    text-align: center;
+    line-height: 150%;
+}
+
+.clearfix::after{
+    clear: both;
+    content: '';
+    display: table;
+}
