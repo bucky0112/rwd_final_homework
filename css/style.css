@@ -74,7 +74,7 @@ img{
 .header h1 a{
     text-decoration: none;
     color: white;
-    font-size: 200%;
+    font-size: 180%;
     font-weight: 600;
     padding: 20px;
 }
@@ -124,6 +124,78 @@ img{
     text-align: center;
     line-height: 150%;
 }
+
+/* .....................content.................. */
+
+/* about_secret */
+
+.about_secret{
+    background: #efe9e7;
+    color: #3d1101;
+    padding-top: 4%;
+    position: relative;
+    text-align: center;
+}
+
+
+.about_secret_title h2{
+    font-size: 120%;
+    display: inline-block;
+    line-height: 180%;
+    position: relative;
+}
+
+.about_secret_title{
+    overflow: hidden;
+}
+
+/* 使用偽元素作出橫線 */
+.about_secret .about_secret_title h2::before, .about_secret .about_secret_title h2::after{
+    content: "";
+    height: 1px;
+    background: #000;
+    top: 50%;
+    width: 70%;
+    position: absolute;
+}
+
+/* 調整左右兩邊線的位置 */
+.about_secret .about_secret_title h2::before{
+    left: -80%;
+}
+
+.about_secret .about_secret_title h2::after{
+    right: -80%;
+}
+
+.three_secret{
+    margin-top: 5%;
+}
+
+.three_secret  li{
+    width: 24%;
+    float: left;
+    text-align: center;
+    padding-left: 7%;
+    margin-bottom: 5%;
+}
+
+.three_secret img{
+    border-radius: 50%;
+    margin-bottom: 5%;
+}
+
+.three_secret h3{
+    font-size: 110%;
+}
+
+.three_secret p{
+    margin-top: 5%;
+    text-align: left;
+    line-height: 150%;
+}
+
+
 
 .clearfix::after{
     clear: both;
