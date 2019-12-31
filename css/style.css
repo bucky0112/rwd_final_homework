@@ -227,6 +227,26 @@ img{
     margin: 10% 0 0 3%;
 }
 
+/* .customer_impression */
+
+.customer_impression{
+    background: #efe9e7;
+    color: #3d1101;
+}
+
+
+.customers li{
+    width: 25%;
+    float: left;
+    /* text-align: left; */
+}
+
+.customers img{
+    border-radius: 50%;
+    float: left;
+}
+
+
 .clearfix::after{
     clear: both;
     content: '';
