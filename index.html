@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/85251e146e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -33,7 +34,13 @@
             <div class="tagline">
                 <h2>咬一口就無法忘懷的漢堡</h2>
                 <p>七夕絕對無法錯過的好滋味</p>
-                <p>六角大漢堡</p>
+                <p>
+                    <i class="fas fa-utensils"></i>
+                    <span>六角大漢堡</span>
+                    <i class="fas fa-utensils"></i>
+                </p>
+                
+                
             </div>
         </div>
         
@@ -96,10 +103,91 @@
                     </li>
                 </ul>
             </div>
-            <div class="form"></div>
+
+            <form action="booking" method="post" class="booking clearfix">
+                <h2>我們的位置不太夠坐<br>要不要先訂位呢？</h2>
+
+                <img src="img/booking/Map.png" alt="" class="map">
+
+                <div class="booking_form">
+                    <label for="guess_name">姓名</label>
+                    <input type="text" name="guess_name" id="guess_name" placeholder="六角講師吃尾牙">
+
+                    <label for="tel">電話</label>
+                    <input type="tel" name="tel" id="tel" placeholder="02-1234567">
+
+                    <label for="mail">信箱</label>
+                    <input type="email" name="mail" id="mail" placeholder="test@gmail.com">
+
+                    <label for="people">人數</label>
+                    <input type="number" name="people" id="people">
+
+                    <h3>是否需要素食</h3>
+
+                    <!-- radio button -->
+
+                    <div class="radio_button">
+                        <label class="container">是
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                          
+                          <label class="container">否
+                            <input type="checkbox"  checked>
+                            <span class="checkmark"></span>
+                          </label>
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" value="取消" class="cancel_button">
+                        <input type="submit" value="送出" class="confirm_button">
+                    </div>
+
+                    
+
+                </div>
+
+                
+            </form>
+            
         </div>
 
-        <div class="footer"></div>
+        <div class="footer">
+            <div class="about_hex">
+                <h3>關於 六角西餐廳</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quibusdam ratione molestias nam perferendis vel quidem optio soluta sint placeat.</p>
+            </div>
+
+            <div class="contact_us">
+                <h3>聯絡方式</h3>
+                <ul class="address&tel&mail">
+                    <li>高雄市中正五路到底</li>
+                    <li>+886 886 886</li>
+                    <li>service@hexschool.com</li>
+                </ul>
+            </div>
+
+            <div class="footer_link">
+                <h2>
+                    <a href="http://">六角西餐廳</a>
+                </h2>
+            </div>
+            
+
+            <div class="social_media">
+                <a href="http://" class="google">
+                    <i class="fab fa-google-plus-square"></i>
+                </a>
+                <a href="http://">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="http://">
+                    <i class="fab fa-facebook-square">
+                    </i>
+                </a>
+            </div>
+            
+        </div>
     </div>
 </body>
 </html>

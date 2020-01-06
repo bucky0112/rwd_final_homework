@@ -127,6 +127,10 @@ img{
     line-height: 150%;
 }
 
+.tagline span{
+    margin: 0 0.5%;
+}
+
 /* .....................content.................. */
 
 /* about_secret */
@@ -270,6 +274,148 @@ img{
     display: block;
     text-align: right;
     padding-top: 10%;
+}
+
+/* booking */
+.booking{
+    background: #f6f4f3;
+    color: #4d2719;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.booking h2{
+    text-align: center;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 3%;
+}
+
+.booking img{
+    max-width: 45%;
+    float: left;
+    padding-left: 4%;
+}
+
+.booking_form{
+    width: 45%;
+    float: right;
+    padding-right: 4%;
+    line-height: 150%;
+}
+
+.booking_form h3{
+    margin-bottom: 2%;
+}
+
+#guess_name,#tel,#mail,#people{
+    display: block;
+    width: 35em;
+    height: 2em;
+    margin-bottom: 2%;
+}
+
+/* radio button */
+
+/* 設定樣式 (container) */
+.container {
+    position: relative;
+    padding-right: 60px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* 隱藏預設 radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* 新增自定 radio button */
+  .checkmark {
+    position: absolute;
+    top: -1;
+    left: 5;
+    height: 16px;
+    width: 16px;
+    background-color: #f6f4f3;
+    border-radius: 50%;
+    border: 2px solid #9b9b9b;
+    margin-left: 5px;
+  }
+  
+  /* 滑鼠hover效果 */
+  .container:hover input ~ .checkmark {
+    background-color: #aaa;
+  }
+  
+  /* 滑鼠點選效果 */
+  .container input:checked ~ .checkmark {
+    border: 2px solid #4a90e2;
+  }
+  
+  /* 滑鼠點選增加藍點 */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* 滑鼠點選藍點顯示 */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* 藍點樣式 */
+  .container .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4a90e2;
+  }
+
+/* 按鈕位置 */
+.button{
+    float: right;
+    margin-top: 5%;
+}
+
+/* 按鈕樣式 */
+.cancel_button{
+    border: none;
+    border-radius: 5px;
+    background-color: #a09e9e;
+    color: white;
+    cursor: pointer;
+    padding: 10px 25px;
+}
+
+.confirm_button{
+    border: none;
+    border-radius: 5px;
+    background-color: #f56c23;
+    color: white;
+    cursor: pointer;
+    padding: 10px 25px;
+    margin-left: 10px;
+}
+
+
+.social_media a{
+    text-decoration: none;
+    font-size: 36px;
+}
+
+.google{
+    color: red;
 }
 
 .clearfix::after{
