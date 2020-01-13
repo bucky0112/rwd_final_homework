@@ -47,6 +47,10 @@ img{
 	max-width: 100%;
 	height: auto;
 }
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
 /* ------------------------------------------- */
 
 .wrap{
@@ -66,6 +70,7 @@ img{
     padding-top: 1.5%;
     padding-left: 3%;
     padding-right: 3%;
+    padding-bottom: 1.5%;
 }
 
 .header h1{
@@ -183,7 +188,7 @@ img{
 }
 
 .three_secret  li{
-    width: 24%;
+    width: 31%;
     float: left;
     text-align: center;
     padding-left: 7%;
@@ -209,30 +214,38 @@ img{
 /* chef_info */
 
 .chef_info{
-    background: #3d1101;
-    color: white;
-    font-size: 16px;
-}
-
-.chef_info h2{
-    font-size: 20px;
-}
-
-.chef_info h3{
-    margin-bottom: 3%;
+    background-color: #3d1101;
 }
 
 .chef_img{
-    float: left;
-    padding-left: 4%;
+    background-image: url(../img/chef_info/main_chef_brown.png);
+    height: 460px;
     width: 45%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 5%;
 }
 
-.chef_main_content{
+.chef_intro{
+    color: white;
     float: left;
-    width: 40%;
-    line-height: 25px;
-    margin: 8% 0 0 3%;
+    width: 45%;
+    line-height: 20px;
+    padding: 80px 2% 50px 3%;
+}
+
+.chef_intro h2{
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.chef_intro h2 br{
+    font-size: 16px;
+}
+
+.chef_intro p{
+    font-size: 16px;
 }
 
 /* .customer_impression */
@@ -295,16 +308,16 @@ img{
     margin-bottom: 3%;
 }
 
-.booking img{
+.map{
     max-width: 45%;
     float: left;
     padding-left: 4%;
 }
 
 .booking_form{
-    width: 45%;
-    float: right;
-    padding-right: 4%;
+    max-width: 45%;
+    float: left;
+    padding-left: 5%;
     line-height: 25px;
 }
 
@@ -313,9 +326,9 @@ img{
 }
 
 #guess_name,#tel,#mail,#people{
-    display: block;
-    width: 35em;
-    height: 2em;
+    width: 100%;
+    max-width: 500px;
+    height: 2.5em;
     margin-bottom: 2%;
 }
 
@@ -378,8 +391,8 @@ img{
   
   /* 藍點樣式 */
   .container .checkmark:after {
-    top: 4px;
-    left: 4px;
+    top: 2px;
+    left: 2px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -474,6 +487,7 @@ img{
 }
 
 .social_media{
+    margin-top: 10%;
     margin-left: 50%;
 }
 
