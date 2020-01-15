@@ -55,22 +55,22 @@
                     <li>
                         <img src="img/about_secret/feature_1.png" alt="">
                         <h3>臺灣本土蔬菜</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit rerum aliquid nisi. Veniam distinctio, possimus velit ipsam quas aliquid beatae consequuntur voluptate ab optio quibusdam vero in magni, doloribus corporis.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit rerum aliquid nisi. Veniam distinctio, possimus velit ipsam quas aliquid</p>
                     </li>
                     <li>
                         <img src="img/about_secret/feature_2.png" alt="">
                         <h3>專業米其林廚師</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit rerum aliquid nisi. Veniam distinctio, possimus velit ipsam quas aliquid beatae consequuntur voluptate ab optio quibusdam vero in magni, doloribus corporis.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit rerum aliquid nisi. Veniam distinctio, possimus velit ipsam quas aliquid</p>
                     </li>
                     <li>
                         <img src="img/about_secret/feature_3.png" alt="">
                         <h3>對於專業不能退讓</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit rerum aliquid nisi. Veniam distinctio, possimus velit ipsam quas aliquid beatae consequuntur voluptate ab optio quibusdam vero in magni, doloribus corporis.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit rerum aliquid nisi. Veniam distinctio, possimus velit ipsam quas aliquid</p>
                     </li>
                 </ul>
             </div>
-            <div class="chef_info clearfix">
-                <ul>
+            <div class="chef_info">
+                <ul class="clearfix">
                     <li class="chef_img"></li>
                     <li class="chef_intro">
                         <h2>今日主廚：帕金森、梅在帕<br>Today Chef: Plum in Shock</h2>
@@ -108,9 +108,49 @@
             <form action="booking" method="post" class="booking clearfix">
                 <h2>我們的位置不太夠坐<br>要不要先訂位呢？</h2>
 
-                <img src="img/booking/Map.png" alt="" class="map">
+                <ul class="clearfix">
+                    <li class="map"></li>
 
-                <div class="booking_form">
+                    <li class="booking_form">
+                        <div class="clearfix">
+                            <label for="guess_name">姓名</label>
+                            <input type="text" name="guess_name" id="guess_name" placeholder="六角講師吃尾牙" size="80px">
+
+                            <label for="tel">電話</label>
+                            <input type="tel" name="tel" id="tel" placeholder="02-1234567" size="80px">
+
+                            <label for="mail">信箱</label>
+                            <input type="email" name="mail" id="mail" placeholder="test@gmail.com" size="80px">
+
+                            <label for="people">人數</label>
+                            <input type="text" name="people" id="people" size="80px">
+
+                            <h3>是否需要素食</h3>
+
+                            <!-- radio button -->
+
+                            <div class="radio_button">
+                                <label class="container">是
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                </label>
+                          
+                                <label class="container">否
+                                <input type="checkbox"  checked>
+                                <span class="checkmark"></span>
+                                </label>
+                            </div>
+
+                            <div class="button">
+                                <input type="submit" value="取消" class="cancel_button">
+                                <input type="submit" value="送出" class="confirm_button">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- <img src="img/booking/Map.png" alt="" class="map"> -->
+
+                <!-- <div class="booking_form">
                     <label for="guess_name">姓名</label>
                     <input type="text" name="guess_name" id="guess_name" placeholder="六角講師吃尾牙">
 
@@ -125,7 +165,6 @@
 
                     <h3>是否需要素食</h3>
 
-                    <!-- radio button -->
 
                     <div class="radio_button">
                         <label class="container">是
@@ -146,17 +185,17 @@
 
                     
 
-                </div>
+                </div> -->
 
                 
             </form>
             
         </div>
 
-        <div class="footer">
+        <div class="footer clearfix">
             <div class="about_hex">
                 <h3>關於 六角西餐廳</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quibusdam ratione molestias nam perferendis vel quidem optio soluta sint placeat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quibusdam ratione molestias</p>
             </div>
 
             <div class="contact_us">
@@ -168,12 +207,13 @@
                 </ul>
             </div>
 
-            <div class="footer_link">
-                <h2>
-                    <a href="http://">六角西餐廳</a>
-                </h2>
-
-                <div class="social_media">
+            <ul class="footer_link clearfix">
+                <li class="footer_hex_link">
+                    <h2>
+                        <a href="http://">六角西餐廳</a>
+                    </h2>
+                </li>
+                <li class="social_media">
                     <a href="http://" class="google">
                         <i class="fab fa-google-plus-square"></i>
                     </a>
@@ -184,8 +224,10 @@
                         <i class="fab fa-facebook-square">
                         </i>
                     </a>
-                </div>
-            </div>
+                </li>
+            </ul>
+
+            
             
 
             

@@ -131,6 +131,12 @@ img{
     margin-bottom: 4%;
 }
 
+@media(max-width: 768px){
+    .tagline{
+        width: 60%;    
+    }
+}
+
 .tagline p{
     text-align: center;
     line-height: 25px;
@@ -227,6 +233,8 @@ img{
     margin-left: 5%;
 }
 
+
+
 .chef_intro{
     color: white;
     float: left;
@@ -247,6 +255,8 @@ img{
 .chef_intro p{
     font-size: 16px;
 }
+
+
 
 /* .customer_impression */
 
@@ -309,16 +319,33 @@ img{
 }
 
 .map{
-    max-width: 45%;
+    background-image: url(../img/booking/Map.png);
+    /* max-width: 45%; */
+    width: 40%;
+    height: 388px;
     float: left;
-    padding-left: 4%;
+    margin-left: 5%;
 }
 
+@media(max-width: 768px){
+    .map{
+        margin-left: 2%;
+    }
+}
+
+
 .booking_form{
-    max-width: 45%;
+    width: 45%;
     float: left;
-    padding-left: 5%;
+    margin-left: 3%;
     line-height: 25px;
+}
+
+@media(max-width: 768px){
+    .booking_form{
+        width: 50%;
+        margin-left: 5%;
+    }
 }
 
 .booking_form h3{
@@ -326,10 +353,14 @@ img{
 }
 
 #guess_name,#tel,#mail,#people{
-    width: 100%;
-    max-width: 500px;
-    height: 2.5em;
+    height: 3em;
     margin-bottom: 2%;
+}
+
+@media(max-width: 769px) {
+    #guess_name,#tel,#mail,#people{
+        width: 100%;
+    }
 }
 
 /* radio button */
@@ -441,9 +472,9 @@ img{
     background: #efe9e7;
     color: #3d1101;
     line-height: 25px;
-    padding: 5% 0;
-    display: inline-flex;
-    justify-content: space-around;
+    padding: 5% 5%;
+    /* display: inline-flex; */
+    /* justify-content: space-around; */
 }
 
 .footer h3{
@@ -452,14 +483,17 @@ img{
 }
 
 .about_hex{
-    width: 30%;
-    margin-left: 2%;
+    float: left;
+    width: 26%;
+    /* margin-left: 5%; */
 }
 
 
 
 .contact_us{
-    width: 30%;
+    float: left;
+    width: 26%;
+    margin-left: 3%;
 }
 
 .contact_us ul li{
@@ -468,28 +502,51 @@ img{
 }
 
 .footer_link{
-    max-width: 30%;
-    margin-right: 2%;
+    width: 26%;
+    float: right;
+    /* padding-right: 10%; */
 }
 
-/* h2連結放圖片 */
-.footer_link h2 a{
-    background-image: url(../img/footer/logo_l\(null\).svg);
+@media(max-width: 769px){
+    .about_hex{
+        width: 25%;
+    }
+    .contact_us{
+        width: 25%;
+    }
+    .footer_link{
+        width: 35%;
+    }
+
+    .social_media{
+        padding-right: 2%;
+    }
+}
+
+.footer_hex_link{
+    float: left;
+}
+
+.footer_hex_link h2 a{
+    background-image: url(../img/footer/logo_l@svg.svg);
     background-repeat: no-repeat;
-    display: inline-block;
-    background-size: 245px 49px;
+    display: block;
     width: 245px;
     height: 49px;
     overflow: hidden;
     text-indent: 101%;
     white-space: nowrap;
-    padding: 5% 0;
 }
 
+
 .social_media{
+    float: right;
     margin-top: 10%;
-    margin-left: 50%;
+    /* float: right; */
+    /* margin-left: 40%; */
 }
+
+
 
 .social_media a{
     text-decoration: none;
