@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/85251e146e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>
     <title>Document</title>
 </head>
 <body>
@@ -13,9 +14,7 @@
         <div class="banner">
             <div class="header clearfix">
                 <h1>
-                    <a href="http://">
-                        六角西餐廳
-                    </a>
+                    <a href="http://">六角西餐廳</a>
                 </h1>
 
                 <ul class="nav clearfix">
@@ -30,17 +29,18 @@
                     </li>
                 </ul>
 
+                <a href="#" class="showmenu">
+                    <i class="fas fa-bars"></i>
+                </a>
             </div>
             <div class="tagline">
-                <h2>咬一口就無法忘懷的漢堡</h2>
+                <h2>咬一口<br>就無法忘懷的漢堡</h2>
                 <p>七夕絕對無法錯過的好滋味</p>
                 <p>
                     <i class="fas fa-utensils"></i>
                     <span>六角大漢堡</span>
                     <i class="fas fa-utensils"></i>
                 </p>
-                
-                
             </div>
         </div>
         
@@ -55,17 +55,17 @@
                     <li>
                         <img src="img/about_secret/feature_1.png" alt="">
                         <h3>臺灣本土蔬菜</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit rerum aliquid nisi. Veniam distinctio, possimus velit ipsam quas aliquid</p>
+                        <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
                     </li>
                     <li>
                         <img src="img/about_secret/feature_2.png" alt="">
                         <h3>專業米其林廚師</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit rerum aliquid nisi. Veniam distinctio, possimus velit ipsam quas aliquid</p>
+                        <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
                     </li>
                     <li>
                         <img src="img/about_secret/feature_3.png" alt="">
                         <h3>對於專業不能退讓</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit rerum aliquid nisi. Veniam distinctio, possimus velit ipsam quas aliquid</p>
+                        <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
                     </li>
                 </ul>
             </div>
@@ -73,15 +73,16 @@
                 <ul class="clearfix">
                     <li class="chef_img"></li>
                     <li class="chef_intro">
-                        <h2>今日主廚：帕金森、梅在帕<br>Today Chef: Plum in Shock</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab atque id corrupti quae assumenda quidem ipsum? Fugit, molestias accusantium aliquam natus dignissimos veniam architecto quas quasi voluptas assumenda aut provident?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae atque obcaecati, dolorem neque officiis quia quidem earum ratione! Commodi eos repudiandae, hic expedita a quaerat accusamus nostrum reiciendis nesciunt.</p>
+                        <h2>今日主廚：帕金森、梅在帕</h2>
+                        <h3>Today Chef: Plum in Shock</h3>
+                        <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
                     </li>
                 </ul>
                 
             </div>
             <div class="customer_impression">
                 <h2>聽聽別人的感想</h2>
-                <ul class="customers">
+                <ul class="customers clearfix">
                     <img src="img/customer_impression/avatar_1.png" alt="">
                     <li>
                         <h3>高雄一口吃</h3>
@@ -114,32 +115,35 @@
                     <li class="booking_form">
                         <div class="clearfix">
                             <label for="guess_name">姓名</label>
-                            <input type="text" name="guess_name" id="guess_name" placeholder="六角講師吃尾牙" size="80px">
+                                <input type="text" name="guess_name" id="guess_name" placeholder="六角講師吃尾牙" size="80px">
+    
+                                <label for="tel">電話</label>
+                                <input type="tel" name="tel" id="tel" placeholder="02-1234567" size="80px">
+    
+                                <label for="mail">信箱</label>
+                                <input type="email" name="mail" id="mail" placeholder="test@gmail.com" size="80px">
+    
+                                <label for="people">人數</label>
+                                <input type="text" name="people" id="people" size="80px">
+                            
+                            <div class="veg">
+                                <h3>是否需要素食</h3>
 
-                            <label for="tel">電話</label>
-                            <input type="tel" name="tel" id="tel" placeholder="02-1234567" size="80px">
-
-                            <label for="mail">信箱</label>
-                            <input type="email" name="mail" id="mail" placeholder="test@gmail.com" size="80px">
-
-                            <label for="people">人數</label>
-                            <input type="text" name="people" id="people" size="80px">
-
-                            <h3>是否需要素食</h3>
-
-                            <!-- radio button -->
-
-                            <div class="radio_button">
-                                <label class="container">是
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                </label>
-                          
-                                <label class="container">否
-                                <input type="checkbox"  checked>
-                                <span class="checkmark"></span>
-                                </label>
+                                <!-- radio button -->
+    
+                                <div class="radio_button">
+                                    <label class="container">是
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    </label>
+                              
+                                    <label class="container">否
+                                    <input type="checkbox"  checked>
+                                    <span class="checkmark"></span>
+                                    </label>
+                                </div>
                             </div>
+                            
 
                             <div class="button">
                                 <input type="submit" value="取消" class="cancel_button">
@@ -148,44 +152,7 @@
                         </div>
                     </li>
                 </ul>
-                <!-- <img src="img/booking/Map.png" alt="" class="map"> -->
-
-                <!-- <div class="booking_form">
-                    <label for="guess_name">姓名</label>
-                    <input type="text" name="guess_name" id="guess_name" placeholder="六角講師吃尾牙">
-
-                    <label for="tel">電話</label>
-                    <input type="tel" name="tel" id="tel" placeholder="02-1234567">
-
-                    <label for="mail">信箱</label>
-                    <input type="email" name="mail" id="mail" placeholder="test@gmail.com">
-
-                    <label for="people">人數</label>
-                    <input type="text" name="people" id="people">
-
-                    <h3>是否需要素食</h3>
-
-
-                    <div class="radio_button">
-                        <label class="container">是
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                          </label>
-                          
-                          <label class="container">否
-                            <input type="checkbox"  checked>
-                            <span class="checkmark"></span>
-                          </label>
-                    </div>
-
-                    <div class="button">
-                        <input type="submit" value="取消" class="cancel_button">
-                        <input type="submit" value="送出" class="confirm_button">
-                    </div>
-
-                    
-
-                </div> -->
+                
 
                 
             </form>
@@ -195,7 +162,7 @@
         <div class="footer clearfix">
             <div class="about_hex">
                 <h3>關於 六角西餐廳</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quibusdam ratione molestias</p>
+                <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at.</p>
             </div>
 
             <div class="contact_us">
@@ -234,5 +201,6 @@
             
         </div>
     </div>
+    <script src="js/js.js"></script>
 </body>
 </html>
