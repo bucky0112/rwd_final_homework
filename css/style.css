@@ -789,6 +789,133 @@ img{
     }
 }
 
+/* ----cart頁面----- */
+.cart{
+    background-color: #efe9e7;
+    color: #3d1101;
+    padding: 50px 3%;
+}
+
+.order_manu{
+    float: left;
+    width: 35%;
+}
+
+.order_manu_title{
+    margin-left: 5%;
+}
+
+.order_manu_title li{
+    float: left;
+}
+
+/* .order_manu_title i{
+    font-size: 20px;
+    padding-right: 10px;
+} */
+
+.order_manu_title img{
+    max-width: 26px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.order_manu_title h2{
+    font-size: 20px;
+    color: #3d1101;
+    margin-top: 10px;
+}
+
+.order_manu_list{
+    float: left;
+    margin-top: 15px;
+    width: 65%;
+}
+
+.order_manu_list li{
+    padding-bottom: 10px;
+}
+
+.order_manu_list a{
+    color: #3d1101;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 0 10px 5px;
+    border-bottom: 1px solid #3d1101;
+    display: block;
+}
+
+.order_manu_list a:hover{
+    background-color: #3d1101;
+    color: white;
+}
+
+/* ------searchbar-------- */
+
+.searchbar{
+    overflow: hidden;
+    position: relative;
+    float: left;
+    left: -90px;
+}
+
+
+.searchbar input[type=text]{
+    float: left;
+    padding: 7px;
+    border: 2px solid #3d1101;
+    border-right: none;
+    font-size: 16px;
+}
+
+.searchbar button{
+    float: right;
+    padding: 6px 10px;
+    margin-right: 16px;
+    background: #3d1101;
+    color: white;
+    font-size: 17px;
+    border: 2px solid #3d1101;
+    cursor: pointer;
+}
+
+.searchbar button:hover{
+    background-color: #efe9e7;
+    color: #3d1101;
+}
+
+.checkout_zone{
+    float: right;
+    font-size: 16px;
+}
+
+.checkout_zone li{
+    float: left;
+}
+
+.checkout a{
+    color: #3d1101;
+    text-decoration: none;
+    display: block;
+    padding: 3px 20px 2px 20px;
+    border-right: 2px solid #3d1101;
+    margin-top: 8px;
+}
+
+.checkout a:hover{
+    border: 1px solid #3d1101;
+    background-color: #3d1101;
+    color: white;
+}
+
+.shopcar img{
+    max-width: 27px;
+    height: 29px;
+    margin-left: 20px;
+}
+
+
+
 .clearfix::after{
     clear: both;
     content: '';
