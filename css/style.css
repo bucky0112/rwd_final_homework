@@ -856,6 +856,11 @@ img{
     float: left;
 }
 
+@media(max-width: 768px){
+    .searchbar input{
+        width: 300px;
+    }
+}
 
 .searchbar input[type=text]{
     float: left;
@@ -944,6 +949,12 @@ img{
     border-radius: 2px;
     margin-right: 20px;
     margin-bottom: 25px;
+}
+
+@media(max-width: 768px){
+    .product_list li{
+        width: 45%;
+    }
 }
 
 
@@ -1039,6 +1050,12 @@ img{
     position: relative;    
 }
 
+@media(max-width: 768px){
+    .burger_package_content p::after{
+        left: 47px;
+    }
+}
+
 .sausage_banner{
     background-image: url(../img/product_list/product_2.png);
     max-width: 100%;
@@ -1083,6 +1100,12 @@ img{
     margin-bottom: 20px;
     left: 30px;
     position: relative;    
+}
+
+@media(max-width: 768px){
+    .sausage_content p::after{
+        left: 38px;
+    }
 }
 
 
@@ -1132,6 +1155,12 @@ img{
     position: relative;    
 }
 
+@media(max-width: 768px){
+    .burg_brothers_content p::after{
+        left: 38px;
+    }
+}
+
 .dragon_ball_package_banner{
     background-image: url(../img/product_list/product_4.png);
     max-width: 100%;
@@ -1176,6 +1205,12 @@ img{
     margin-bottom: 20px;
     left: 30px;
     position: relative;    
+}
+
+@media(max-width: 768px){
+    .dragon_ball_package_content p::after{
+        left: 38px;
+    }
 }
 
 .add_to_cart{
