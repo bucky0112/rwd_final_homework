@@ -17,11 +17,11 @@ $(function () {
 
 
 // 點擊加入購物車，顯示數字累加
+var count = 0;
 $(function () {
-  var count = 0;
   $('.add_to_cart').on('click', function (e) {
     e.preventDefault();
-    count = count ++;
+    count = count + 1;
     $('.add_number').html(count);
   });
 });
