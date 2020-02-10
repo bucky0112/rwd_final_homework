@@ -64,10 +64,16 @@
                     <span>享受美食好味道</span>
                 </div>
                 
-                <div class="login_form" id="login_form">
-                    <h2>LOGIN</h2>
-                    <form action="" method="get">
-                        <div class="login_input">
+                <div class="reg_form clearfix">
+                    <h2>REGISTER</h2>
+                    <div class="reg_conditions">
+                        <span>就是這樣條款：</span>
+                        <p>
+                            Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien...
+                        </p>
+                    </div>
+                    <form action="" method="get" class="clearfix">
+                        <div class="reg_input">
                             <label for="user_email">Email Address*</label>
                             <div class="input_icon">
                                 <input type="email" name="user_email" placeholder="Email" id="user_email" size="42">
@@ -79,14 +85,17 @@
                                 <input type="password" name="user_password" placeholder="Password" id="user_password" size="42">
                                 <i class="fas fa-lock"></i>
                             </div>
+                            <div class="input_icon">
+                                <input type="password" name="user_password" placeholder="Confirm Password" id="user_password" size="42">
+                                <i class="fas fa-lock"></i>
+                            </div>
                         </div>
                         
-                        <a href="http://">忘記密碼？</a>
+                        <a href="#login_form/">已經有帳號了？</a>
+                        
+                        <input type="submit" value="註冊" class="register_btn">
                     </form>
-                    <div class="login_and_reg_btn clearfix">
-                        <input type="submit" value="註冊" class="reg_btn">
-                        <input type="submit" value="登入" class="login_btn">
-                    </div>
+                    
                 </div>
             </div>
         </div>
