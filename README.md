@@ -1,2 +1,2 @@
 # Demo
-使用 HTML / CSS 手刻 RWD 網站
+[https://bucky0112.github.io/rwd_use_by_html-css/](https://bucky0112.github.io/rwd_use_by_html-css/)
